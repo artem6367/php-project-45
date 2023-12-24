@@ -1,5 +1,10 @@
 {
     "name": "hexlet/code",
     "type": "project",
+    "description": "hexlet php-project-45",
+    "license": "MIT",
+    "bin": [
+        "bin/brain-games"
+    ],
     "require": {}
 }
