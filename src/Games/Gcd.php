@@ -20,7 +20,7 @@ function getData()
     return [$first, $second];
 }
 
-function getCorrectAnswer($data)
+function getCorrectAnswer(array $data)
 {
     [$first, $second] = $data;
 
@@ -35,7 +35,7 @@ function getCorrectAnswer($data)
     return 1;
 }
 
-function getDataString($data)
+function getDataString(array $data)
 {
     return implode(' ', $data);
 }

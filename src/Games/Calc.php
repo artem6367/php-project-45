@@ -23,7 +23,7 @@ function getData()
     return [$operation, $first, $second];
 }
 
-function getCorrectAnswer($data)
+function getCorrectAnswer(array $data)
 {
     [$operation, $first, $second] = $data;
 
@@ -42,7 +42,7 @@ function getCorrectAnswer($data)
     return $correctAnswer;
 }
 
-function getDataString($data)
+function getDataString(array $data)
 {
     [$operation, $first, $second] = $data;
 

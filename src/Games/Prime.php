@@ -18,7 +18,7 @@ function getData()
     return random_int(2, 1000);
 }
 
-function getCorrectAnswer($data)
+function getCorrectAnswer(int $data)
 {
     for ($i = $data - 1; $i > 1; $i--) {
         if ($data % $i == 0) {
@@ -29,7 +29,7 @@ function getCorrectAnswer($data)
     return 'yes';
 }
 
-function getDataString($data)
+function getDataString(int $data)
 {
     return $data;
 }

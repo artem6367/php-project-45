@@ -38,12 +38,12 @@ function getData()
     return [$correctAnswer, $progression];
 }
 
-function getCorrectAnswer($data)
+function getCorrectAnswer(array $data)
 {
     return $data[0];
 }
 
-function getDataString($data)
+function getDataString(array $data)
 {
     return implode(' ', $data[1]);
 }

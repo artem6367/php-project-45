@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function start($rules, $getData, $getCorrectAnswer, $getDataString)
+function start(string $rules, callable $getData, callable $getCorrectAnswer, callable $getDataString)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');

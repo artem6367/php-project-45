@@ -18,12 +18,12 @@ function getData()
     return random_int(1, 99);
 }
 
-function getCorrectAnswer($data)
+function getCorrectAnswer(int $data)
 {
     return $data % 2 == 0 ? 'yes' : 'no';
 }
 
-function getDataString($data)
+function getDataString(int $data)
 {
     return $data;
 }
