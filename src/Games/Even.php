@@ -2,7 +2,6 @@
 
 namespace BrainGames\Games\Even;
 
-
 function run()
 {
     $rules = 'Answer "yes" if the number is even, otherwise answer "no".';

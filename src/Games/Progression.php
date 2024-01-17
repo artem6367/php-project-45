@@ -2,7 +2,6 @@
 
 namespace BrainGames\Games\Progression;
 
-
 function run()
 {
     $rules = 'What number is missing in the progression?';

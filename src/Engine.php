@@ -5,7 +5,6 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-
 function start($rules, $getData, $getCorrectAnswer, $getDataString)
 {
     line('Welcome to the Brain Games!');
