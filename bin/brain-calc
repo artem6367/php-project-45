@@ -3,4 +3,4 @@
 
 require_once "./vendor/autoload.php";
 
-BrainGames\Games\Even\run();
+\BrainGames\Games\Calc\run();

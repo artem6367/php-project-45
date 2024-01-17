@@ -1,22 +1,25 @@
 <?php
 
-namespace BrainGames\EvenGame;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
-function run()
+
+function start($rules, $getData, $getCorrectAnswer, $getDataString)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line($rules);
     $count = 3;
     for ($i = 0; $i < $count; $i++) {
-        $random = random_int(1, 99);
-        line("Question: %s", $random);
+        $data = $getData();
+        $correctAnswer = $getCorrectAnswer($data);
+        $dataString = $getDataString($data);
+        line("Question: %s", $dataString);
         $answer = prompt("Your answer: ");
-        $correctAnswer = $random % 2 == 0 ? 'yes' : 'no';
+
         if ($answer == $correctAnswer) {
             line('Correct!');
             if ($i == $count - 1) {
