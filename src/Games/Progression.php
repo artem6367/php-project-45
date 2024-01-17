@@ -23,9 +23,8 @@ function getData()
     $operations = [
         fn ($num) => $num + $dif,
         fn ($num) => $num - $dif,
-        fn ($num) => $num * $dif,
     ];
-    $operation = $operations[random_int(0, 2)];
+    $operation = $operations[random_int(0, 1)];
 
     for ($i = 1; $i < $count; $i++) {
         $prev = $progression[$i - 1];
