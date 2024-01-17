@@ -21,7 +21,13 @@ function getData()
 
 function getCorrectAnswer($data)
 {
-    return gmp_prob_prime($data) == 2 ? 'yes' : 'no';
+    for ($i = $data - 1; $i > 1; $i--) {
+        if ($data % $i == 0) {
+            return 'no';
+        }
+    }
+
+    return 'yes';
 }
 
 function getDataString($data)

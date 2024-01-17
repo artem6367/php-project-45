@@ -24,8 +24,14 @@ function getCorrectAnswer($data)
 {
     [$first, $second] = $data;
 
-    $gcd = gmp_gcd($first, $second);
-    return gmp_intval($gcd);
+    $min = $first < $second ? $first : $second;
+
+    for ($i = $min; $i > 0; $i--) {
+        if ($first % $i == 0 && $second % $i == 0) {
+            return $i;
+        }
+    }
+
     return 1;
 }
 
